@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">电影资讯</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="no_network">网络连接失败，请检查网络</string>
+    <string name="no_nore_data">无更多数据</string>
+    <string name="start_data">上映时间：</string>
+
+    <array name="movie_titles">
+        <item>正在热映</item>
+        <item>将要上映</item>
+        <!--<item>值得一看</item>-->
+        <item>TOP250</item>
+        <!--<item>北美票房榜单</item>-->
+    </array>
+
+    <array name="comment_titles">
+        <item>影评</item>
+        <item>短评</item>
+    </array>
+
+    <string name="new_movies">豆瓣电影新片榜</string>
+    <string name="weekly_movies">豆瓣电影本周口碑榜</string>
+
+    <string name="action_search">搜索</string>
+    <string name="download">下载</string>
+    <string name="share">分享</string>
+    <string name="hint_search">搜索你感兴趣的电影、导演、演员</string>
+    <string name="original_title">原名：</string>
+    <string name="durations">片长：</string>
+    <string name="genres">类型：</string>
+    <string name="pubdates">上映时间：</string>
+    <string name="introduction">简介</string>
+    <string name="directors">导演</string>
+    <string name="casts">影人</string>
+    <string name="photos">剧照</string>
+    <string name="all_photos">全部剧照</string>
+    <string name="your_friend">你的好友</string>
+    <string name="share_movie">给你分享了一部电影《</string>
+    <string name="share_end">》，快去看看吧！ヾ(ﾟ∀ﾟゞ)</string>
+    <string name="searching">搜索中...</string>
+
+    <string name="personal_profile">个人简介</string>
+    <string name="personal_works">代表作品</string>
+    <string name="near_works">近期作品</string>
+    <string name="all_works">全部%s作品</string>
+    <string name="all_work">全部作品</string>
+
+    <string name="all_cast_photos">全部照片</string>
+
+    <string name="download_success">下载成功</string>
+    <string name="download_failed">下载失败</string>
+    <string name="download_exists">图片已经存在</string>
+
+    <string name="cast_info">影人资料</string>
+    <string name="sex">性别:</string>
+    <string name="constellation">星座:</string>
+    <string name="birthday">出生日期:</string>
+    <string name="birthplace">出生地:</string>
+    <string name="more_name">更多中文名:</string>
+    <string name="movie">电影</string>
+
+    <string name="del_download_photo">是否删除所选择的图片?</string>
+
+    <string name="del_browsing_history">是否删除浏览记录?</string>
+    <string name="del">删除</string>
+    <string name="confirm">确定</string>
+    <string name="cancle">取消</string>
+
+    <string name="browsing_history">浏览记录</string>
+    <string name="home">首页</string>
+    <string name="bug">ヾ(Ő∀Ő๑)ﾉ</string>
+    <string name="theme">主题</string>
+    <string name="about">关于</string>
+    <string name="download_manager">下载管理</string>
+
+    <string name="whyalwaysmea">why always me a</string>
+    <string name="about_app">这是一个关于电影资讯的app，其中的数据来源于豆瓣开放接口(API)服务</string>
+    <string name="version">版本号：%s</string>
+</resources>

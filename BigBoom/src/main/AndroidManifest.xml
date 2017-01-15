@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.whyalwaysmea.bigboom"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+        如果项目有混淆，则在proguard中添加
+           -keepnames class com.mypackage.MyGlideModule
+            # or more generally:
+            #-keep public class * implements com.whyalwasymea.bigboom.imageloader.glide.CustomGlideModule
+        -->
+        <meta-data
+            android:name="com.whyalwaysmea.bigboom.imageloader.glide.CustomGlideModule"
+            android:value="GlideModule"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme">
+
+        </activity>
+        <activity
+            android:name=".view.moviedetail.ui.MovieDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar">
+        </activity>
+        <activity
+            android:name=".view.moviedetail.ui.ReviewDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar">
+        </activity>
+        <activity
+            android:name=".view.cast.ui.PhotoListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar"/>
+        <activity
+            android:name=".view.cast.ui.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar"/>
+        <activity
+            android:name=".view.cast.ui.CastDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar"/>
+        <activity
+            android:name=".view.cast.ui.CastInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar"/>
+
+        <service android:name=".service.ImageService">
+        </service>
+
+        <activity
+            android:name=".view.cast.ui.AllWorksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar">
+        </activity>
+        <activity
+            android:name=".view.moviedetail.ui.MoviePhotoListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar">
+        </activity>
+        <activity
+            android:name=".view.moviedetail.ui.MoviePhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar"/>
+        <activity
+            android:name=".view.movielist.ui.SearchMovieListActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar"/>
+
+        <!-- 必须初始化 -->
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".view.player.MoviePlayerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.menu.ui.GithubActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar">
+        </activity>
+        <activity
+            android:name=".view.menu.ui.HistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar">
+        </activity>
+        <activity
+            android:name=".view.menu.ui.DownloadManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullActionBar">
+        </activity>
+        <activity android:name=".view.menu.ui.AboutActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".view.menu.ui.SplashActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

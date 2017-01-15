@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--这是App的主要颜色，用于工具栏背景-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--这是App深色调的基本颜色，主要用于通知栏背景-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--这是文本的主要颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--分割线颜色-->
+        <item name="android:divider">@color/divider</item>
+        <item name="primaryTextDarkColor">@color/material_black</item>
+        <item name="primaryTextColor">@color/primaryTextColor</item>
+        <item name="shadow">@drawable/shadow_bg</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseAppTheme" />
+
+    <style name="AppTheme.FullActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/holo_red_dark</item>
+        <item name="android:titleTextColor">@color/material_black</item>
+    </style>
+
+
+    <style name="myratingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_bg</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:maxHeight">36dp</item>
+    </style>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/material_black</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>
