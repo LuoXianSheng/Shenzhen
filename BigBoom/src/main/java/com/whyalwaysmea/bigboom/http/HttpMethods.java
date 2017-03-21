@@ -67,7 +67,7 @@ public class HttpMethods {
                 Cache cache = new Cache(cacheFile, DEFAULT_CACHE_SIZE);
                 mOkHttpClient = new OkHttpClient.Builder()
                         .cache(cache)
-                        .addInterceptor(REQUEST_INTERCEPTOR)
+//                        .addInterceptor(REQUEST_INTERCEPTOR)
                         .addNetworkInterceptor(RESPONSE_INTERCEPTOR)
                         .addInterceptor(mLoggingInterceptor)
                         .build();
@@ -77,16 +77,16 @@ public class HttpMethods {
     }
 
     // use lambda
-    private static final Interceptor REQUEST_INTERCEPTOR = chain -> {
-        Request request = chain.request();
-        CacheControl cacheControl = new CacheControl.Builder()
-                .maxStale(5, TimeUnit.SECONDS)      //这个是控制缓存的过时时间
-                .build();
-        request = request.newBuilder()
-                .cacheControl(cacheControl)
-                .build();
-        return chain.proceed(request);
-    };
+//    private static final Interceptor REQUEST_INTERCEPTOR = chain -> {
+//        Request request = chain.request();
+//        CacheControl cacheControl = new CacheControl.Builder()
+//                .maxStale(5, TimeUnit.SECONDS)      //这个是控制缓存的过时时间
+//                .build();
+//        request = request.newBuilder()
+//                .cacheControl(cacheControl)
+//                .build();
+//        return chain.proceed(request);
+//    };
 
     // 针对那些服务器不支持缓存策略的情况下，使用强制修改响应头，达到缓存的效果
     // 响应拦截只不过是出于规范，向服务器发出请求，至于服务器搭不搭理我们我们不管他，我们在响应里面做手脚，有网没有情况下的缓存策略

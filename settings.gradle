@@ -1,1 +1,3 @@
-include ':app', ':BigBoom', ':vitamio2', ':BeautifulWords', ':recyclerviewlibrary'
+include ':app', ':BigBoom', ':vitamio2', ':publiclibrary', ':likequanmintv', ':flycotablayout'
+
+//, ':BeautifulWords', ':recyclerviewlibrary'

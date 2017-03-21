@@ -1,6 +1,6 @@
 package com.whyalwaysmea.bigboom.db;
 
-import com.whyalwasymea.bigboom.dao.DaoMaster;
+import com.whyalwaysmea.bigboom.dao.DaoMaster;
 import com.whyalwasymea.bigboom.dao.DaoSession;
 import com.whyalwaysmea.bigboom.App;
 

@@ -9,10 +9,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/BeautifulWords" />
             <option value="$PROJECT_DIR$/BigBoom" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/recyclerviewlibrary" />
+            <option value="$PROJECT_DIR$/flycotablayout" />
+            <option value="$PROJECT_DIR$/likequanmintv" />
+            <option value="$PROJECT_DIR$/publiclibrary" />
             <option value="$PROJECT_DIR$/vitamio2" />
           </set>
         </option>
